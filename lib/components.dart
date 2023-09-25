@@ -15,6 +15,13 @@ class NumPad extends StatelessWidget {
         border: Border.all(width: 2, color: Colors.green),
         borderRadius: BorderRadius.circular(20),
       ),
+      child: Stack(
+        children: [IconButton(onPressed: () {}, icon: Icon(Icons.one_k))],
+      ),
     );
   }
+}
+
+Widget number() {
+  return Material();
 }
