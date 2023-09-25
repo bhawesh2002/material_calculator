@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(Material_Calculator());
+void main() => runApp(const Material_Calculator());
 
+// ignore: camel_case_types
 class Material_Calculator extends StatelessWidget {
   const Material_Calculator({super.key});
 
