@@ -11,7 +11,7 @@ class Material_Calculator extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Material Calculator',
-      theme: ThemeData(useMaterial3: true),
+      theme: ThemeData(useMaterial3: true, primarySwatch: Colors.green),
       home: const Home(),
     );
   }
