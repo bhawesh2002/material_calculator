@@ -7,6 +7,9 @@ class Material_Calculator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      title: 'Material Calculator',
+      theme: ThemeData(useMaterial3: true),
+    );
   }
 }
