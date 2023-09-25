@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:material_calculator/home.dart';
 
 void main() => runApp(const Material_Calculator());
 
@@ -11,6 +12,7 @@ class Material_Calculator extends StatelessWidget {
     return MaterialApp(
       title: 'Material Calculator',
       theme: ThemeData(useMaterial3: true),
+      home: const Home(),
     );
   }
 }
