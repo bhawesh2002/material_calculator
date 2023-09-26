@@ -10,9 +10,7 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Material Calculator'),
       ),
-      body: const Center(
-        child: NumPad(),
-      ),
+      body: const Center(),
     );
   }
 }
