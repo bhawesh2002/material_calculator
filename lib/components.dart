@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 class Button extends StatelessWidget {
   final String number;
   final VoidCallback buttonFunct;
-  const Button({super.key, required this.number, required this.buttonFunct});
+  Color textColor = Colors.black;
+  Button(
+      {super.key, required this.number, required this.buttonFunct, textColor});
 
   @override
   Widget build(BuildContext context) {
