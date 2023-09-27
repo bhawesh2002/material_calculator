@@ -19,6 +19,7 @@ class Button extends StatelessWidget {
               child: Text(
                 number,
                 textScaleFactor: 1.5,
+                style: TextStyle(color: textColor),
               ),
             ),
           ),
