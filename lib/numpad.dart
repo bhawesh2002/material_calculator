@@ -2,9 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:material_calculator/components.dart';
 
 class NumPad extends StatelessWidget {
-  const NumPad({super.key});
+  NumPad({super.key});
 
   @override
+  final List<String> buttonName = [
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    '6',
+    '7',
+    '8',
+    '9',
+    '0',
+  ];
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
@@ -12,7 +24,11 @@ class NumPad extends StatelessWidget {
       color: Colors.green.shade100,
       child: GridView.count(
         crossAxisCount: 3,
-        children: [Button()],
+        children: const [
+          Button(
+            number: '1',
+          )
+        ],
       ),
     );
   }
