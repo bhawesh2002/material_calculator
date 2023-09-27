@@ -1,25 +1,21 @@
 import 'package:flutter/material.dart';
 
-class Button extends StatefulWidget {
+class Button extends StatelessWidget {
   final String number;
-  const Button({super.key, required this.number});
+  final VoidCallback buttonFunct;
+  const Button({super.key, required this.number, required this.buttonFunct});
 
-  @override
-  State<Button> createState() => _ButtonState();
-}
-
-class _ButtonState extends State<Button> {
   @override
   Widget build(BuildContext context) {
     return ClipOval(
       child: Material(
         child: InkWell(
-          onTap: () {},
+          onTap: buttonFunct,
           child: Container(
             color: Colors.green.shade200,
             child: Center(
               child: Text(
-                widget.number,
+                number,
                 textScaleFactor: 1.5,
               ),
             ),
