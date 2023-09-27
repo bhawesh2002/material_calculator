@@ -27,7 +27,7 @@ class NumPad extends StatelessWidget {
             mainAxisSpacing: 20,
             crossAxisSpacing: 20,
             childAspectRatio: 1),
-        padding: const EdgeInsets.all(15),
+        padding: const EdgeInsets.all(20),
         itemCount: buttonName.length,
         itemBuilder: (context, index) {
           return Button(number: buttonName[index]);
