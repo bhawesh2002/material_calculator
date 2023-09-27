@@ -4,18 +4,26 @@ import 'package:material_calculator/components.dart';
 class NumPad extends StatelessWidget {
   NumPad({super.key});
   final List<String> buttonName = [
+    'C',
+    '()',
+    '%',
+    '/',
     '1',
     '2',
     '3',
+    '+',
     '4',
     '5',
     '6',
+    '-',
     '7',
     '8',
     '9',
+    '*',
+    '.',
     '0',
-    'DEl',
-    'C'
+    'DEL',
+    '=',
   ];
   @override
   Widget build(BuildContext context) {
@@ -27,11 +35,8 @@ class NumPad extends StatelessWidget {
           borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(40), topRight: Radius.circular(40))),
       child: GridView.builder(
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 3,
-            mainAxisSpacing: 20,
-            crossAxisSpacing: 20,
-            childAspectRatio: 1),
+        gridDelegate:
+            const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
         padding: const EdgeInsets.all(20),
         physics: const NeverScrollableScrollPhysics(),
         itemCount: buttonName.length,
