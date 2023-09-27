@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Button extends StatelessWidget {
-  const Button({super.key});
+  final String number;
+  const Button({super.key, required this.number});
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +10,7 @@ class Button extends StatelessWidget {
       child: Container(
         color: Colors.green.shade200,
         child: Center(
-          child: Text('1'),
+          child: Text(number),
         ),
       ),
     );
