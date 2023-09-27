@@ -25,6 +25,7 @@ class NumPad extends StatelessWidget {
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 3,
         ),
+        padding: const EdgeInsets.all(15),
         itemCount: buttonName.length,
         itemBuilder: (context, index) {
           return Button(number: buttonName[index]);
