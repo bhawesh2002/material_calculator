@@ -40,7 +40,7 @@ class NumPad extends StatelessWidget {
           mainAxisSpacing: 20,
           crossAxisSpacing: 10,
         ),
-        padding: const EdgeInsets.only(top: 40, left: 20, right: 20),
+        padding: const EdgeInsets.only(top: 30, left: 20, right: 20),
         physics: const NeverScrollableScrollPhysics(),
         itemCount: buttonName.length,
         itemBuilder: (context, index) {
