@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:material_calculator/components.dart';
 
 class NumPad extends StatelessWidget {
   const NumPad({super.key});
@@ -11,6 +12,7 @@ class NumPad extends StatelessWidget {
       color: Colors.green.shade100,
       child: GridView.count(
         crossAxisCount: 3,
+        children: [Button()],
       ),
     );
   }
