@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:material_calculator/components.dart';
+import 'package:material_calculator/numpad.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
