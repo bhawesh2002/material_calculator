@@ -13,7 +13,11 @@ class Home extends StatelessWidget {
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.height,
         ),
-        Positioned(bottom: 0, left: 0, child: NumPad())
+        Positioned(
+          bottom: 0,
+          left: 0,
+          child: NumPad(),
+        )
       ],
     ));
   }
