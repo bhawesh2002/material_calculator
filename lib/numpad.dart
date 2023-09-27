@@ -37,7 +37,7 @@ class NumPad extends StatelessWidget {
       child: GridView.builder(
         gridDelegate:
             const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.only(top: 40, left: 20, right: 20),
         physics: const NeverScrollableScrollPhysics(),
         itemCount: buttonName.length,
         itemBuilder: (context, index) {
