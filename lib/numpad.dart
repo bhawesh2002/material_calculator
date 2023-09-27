@@ -5,7 +5,7 @@ class NumPad extends StatelessWidget {
   NumPad({super.key});
   final List<String> buttonName = [
     'C',
-    '()',
+    '( )',
     '%',
     '/',
     '1',
