@@ -44,7 +44,10 @@ class NumPad extends StatelessWidget {
         physics: const NeverScrollableScrollPhysics(),
         itemCount: buttonName.length,
         itemBuilder: (context, index) {
-          return Button(number: buttonName[index]);
+          return Button(
+            number: buttonName[index],
+            buttonFunct: () {},
+          );
         },
       ),
     );
