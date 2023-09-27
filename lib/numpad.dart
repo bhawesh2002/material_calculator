@@ -23,8 +23,10 @@ class NumPad extends StatelessWidget {
       color: Colors.green.shade100,
       child: GridView.builder(
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 3,
-        ),
+            crossAxisCount: 3,
+            mainAxisSpacing: 20,
+            crossAxisSpacing: 20,
+            childAspectRatio: 1),
         padding: const EdgeInsets.all(15),
         itemCount: buttonName.length,
         itemBuilder: (context, index) {
