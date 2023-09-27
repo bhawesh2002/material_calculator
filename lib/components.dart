@@ -8,10 +8,13 @@ class Button extends StatelessWidget {
   Widget build(BuildContext context) {
     return ClipOval(
       child: Material(
-        child: Container(
-          color: Colors.green.shade200,
-          child: Center(
-            child: Text(number),
+        child: InkWell(
+          onTap: () {},
+          child: Container(
+            color: Colors.green.shade200,
+            child: Center(
+              child: Text(number),
+            ),
           ),
         ),
       ),
