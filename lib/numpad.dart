@@ -20,9 +20,9 @@ class NumPad extends StatelessWidget {
     '8',
     '9',
     '*',
-    '.',
-    '0',
     'DEL',
+    '0',
+    '.',
     '=',
   ];
   @override
