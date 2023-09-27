@@ -1,13 +1,18 @@
-String exp = "";
+class CalcLogic {
+  String exp = "";
+  Function? expChanged;
+  void modifyExp(String number) {
+    exp += number;
+    expChanged?.call();
+  }
 
-modifyExp(String number) {
-  exp += number;
-}
+  void clearExp() {
+    exp = "";
+    expChanged?.call();
+  }
 
-clearExp() {
-  exp = "";
-}
-
-delChar() {
-  exp = exp.substring(0, (exp.length - 1));
+  void delChar() {
+    exp = exp.substring(0, (exp.length - 1));
+    expChanged?.call();
+  }
 }
