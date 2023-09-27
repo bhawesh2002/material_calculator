@@ -24,9 +24,9 @@ class NumPad extends StatelessWidget {
       color: Colors.green.shade100,
       child: GridView.count(
         crossAxisCount: 3,
-        children: const [
+        children: [
           Button(
-            number: '1',
+            number: buttonName[0],
           )
         ],
       ),
