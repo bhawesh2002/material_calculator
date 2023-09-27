@@ -5,6 +5,13 @@ class Button extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return ClipOval(
+      child: Container(
+        color: Colors.green.shade200,
+        child: Center(
+          child: Text('1'),
+        ),
+      ),
+    );
   }
 }
