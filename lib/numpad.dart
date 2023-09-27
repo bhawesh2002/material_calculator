@@ -14,6 +14,8 @@ class NumPad extends StatelessWidget {
     '8',
     '9',
     '0',
+    'DEl',
+    'C'
   ];
   @override
   Widget build(BuildContext context) {
