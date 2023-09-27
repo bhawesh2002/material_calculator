@@ -21,13 +21,14 @@ class NumPad extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height * 0.7,
       color: Colors.green.shade100,
-      child: GridView.count(
-        crossAxisCount: 3,
-        children: [
-          Button(
-            number: buttonName[0],
-          )
-        ],
+      child: GridView.builder(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 3,
+        ),
+        itemCount: buttonName.length,
+        itemBuilder: (context, index) {
+          return Button(number: buttonName[index]);
+        },
       ),
     );
   }
