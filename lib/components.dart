@@ -13,7 +13,10 @@ class Button extends StatelessWidget {
           child: Container(
             color: Colors.green.shade200,
             child: Center(
-              child: Text(number),
+              child: Text(
+                number,
+                textScaleFactor: 1.5,
+              ),
             ),
           ),
         ),
