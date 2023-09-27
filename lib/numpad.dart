@@ -3,8 +3,6 @@ import 'package:material_calculator/components.dart';
 
 class NumPad extends StatelessWidget {
   NumPad({super.key});
-
-  @override
   final List<String> buttonName = [
     '1',
     '2',
@@ -17,6 +15,7 @@ class NumPad extends StatelessWidget {
     '9',
     '0',
   ];
+  @override
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
