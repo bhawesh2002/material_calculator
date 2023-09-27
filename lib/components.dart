@@ -7,10 +7,12 @@ class Button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipOval(
-      child: Container(
-        color: Colors.green.shade200,
-        child: Center(
-          child: Text(number),
+      child: Material(
+        child: Container(
+          color: Colors.green.shade200,
+          child: Center(
+            child: Text(number),
+          ),
         ),
       ),
     );
