@@ -12,7 +12,7 @@ class Material_Calculator extends StatelessWidget {
     return MaterialApp(
       title: 'Material Calculator',
       theme: ThemeData(useMaterial3: true, primarySwatch: Colors.green),
-      home: const Home(),
+      home: Home(),
     );
   }
 }
