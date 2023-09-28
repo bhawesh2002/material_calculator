@@ -21,6 +21,9 @@ class Home extends StatelessWidget {
           left: 0,
           child: NumPad(),
         ),
+        Positioned(child: GetBuilder<CalcLogic>(builder: (context) {
+          return Text(calcLogic.exp);
+        }))
       ],
     ));
   }
