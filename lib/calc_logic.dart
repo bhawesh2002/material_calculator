@@ -1,18 +1,3 @@
-class CalcLogic {
-  String exp = "";
-  Function? expChanged;
-  void modifyExp(String number) {
-    exp += number;
-    expChanged?.call();
-  }
+import 'package:get/get.dart';
 
-  void clearExp() {
-    exp = "";
-    expChanged?.call();
-  }
-
-  void delChar() {
-    exp = exp.substring(0, (exp.length - 1));
-    expChanged?.call();
-  }
-}
+class CalcLogic extends GetxController {}
