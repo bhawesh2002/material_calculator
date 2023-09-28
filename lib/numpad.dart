@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:material_calculator/calc_logic.dart';
 import 'package:material_calculator/components.dart';
 
 class NumPad extends StatelessWidget {
@@ -25,6 +27,7 @@ class NumPad extends StatelessWidget {
     '.',
     '=',
   ];
+  final calcLogic = Get.put(CalcLogic());
   @override
   Widget build(BuildContext context) {
     return Container(
