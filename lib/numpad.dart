@@ -49,7 +49,9 @@ class NumPad extends StatelessWidget {
         itemBuilder: (context, index) {
           return Button(
             number: buttonName[index],
-            buttonFunct: () {},
+            buttonFunct: () {
+              calcLogic.modifyExp(buttonName[index]);
+            },
           );
         },
       ),
