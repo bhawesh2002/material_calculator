@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 class CalcLogic extends GetxController {
   String exp = "";
 
-  void modifyEcp(String number) {
+  void modifyExp(String number) {
     exp += number;
     update();
   }
