@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:material_calculator/calc_logic.dart';
 import 'package:material_calculator/numpad.dart';
 
 class Home extends StatelessWidget {
-  const Home({super.key});
+  Home({super.key});
+  final calcLogic = Get.put(CalcLogic());
 
   @override
   Widget build(BuildContext context) {
