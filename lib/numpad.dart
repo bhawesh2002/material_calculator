@@ -50,7 +50,11 @@ class NumPad extends StatelessWidget {
           return Button(
             number: buttonName[index],
             buttonFunct: () {
-              calcLogic.modifyExp(buttonName[index]);
+              if (buttonName[index] == 'C') {
+                calcLogic.clearExp();
+              } else {
+                calcLogic.modifyExp(buttonName[index]);
+              }
             },
           );
         },
