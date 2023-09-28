@@ -47,18 +47,32 @@ class NumPad extends StatelessWidget {
         physics: const NeverScrollableScrollPhysics(),
         itemCount: buttonName.length,
         itemBuilder: (context, index) {
-          return Button(
-            number: buttonName[index],
-            buttonFunct: () {
-              if (buttonName[index] == 'C') {
+          if (buttonName[index] == 'C') {
+            return Button(
+              number: buttonName[index],
+              buttonFunct: () {
                 calcLogic.clearExp();
-              } else if (buttonName[index] == 'DEL') {
+              },
+              color: Colors.red,
+            );
+          }
+          if (buttonName[index] == 'DEL') {
+            return Button(
+              number: buttonName[index],
+              buttonFunct: () {
                 calcLogic.delChar();
-              } else {
+              },
+              color: Colors.red,
+            );
+          } else {
+            return Button(
+              number: buttonName[index],
+              buttonFunct: () {
                 calcLogic.modifyExp(buttonName[index]);
-              }
-            },
-          );
+              },
+              color: Colors.black,
+            );
+          }
         },
       ),
     );
