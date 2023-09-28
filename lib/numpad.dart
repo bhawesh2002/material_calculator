@@ -52,6 +52,8 @@ class NumPad extends StatelessWidget {
             buttonFunct: () {
               if (buttonName[index] == 'C') {
                 calcLogic.clearExp();
+              } else if (buttonName[index] == 'DEL') {
+                calcLogic.delChar();
               } else {
                 calcLogic.modifyExp(buttonName[index]);
               }
