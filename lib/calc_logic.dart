@@ -14,7 +14,9 @@ class CalcLogic extends GetxController {
   }
 
   void delChar() {
-    exp = exp.substring(0, (exp.length - 1));
+    if (exp != "") {
+      exp = exp.substring(0, (exp.length - 1));
+    }
     update();
   }
 }
