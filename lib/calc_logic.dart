@@ -2,7 +2,13 @@ import 'package:get/get.dart';
 
 class CalcLogic extends GetxController {
   String exp = "";
-
+  List<String> operators = [
+    '%',
+    '/',
+    '+',
+    '-',
+    '*',
+  ];
   void modifyExp(String number) {
     exp += number;
     update();
