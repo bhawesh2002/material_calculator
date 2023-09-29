@@ -10,6 +10,10 @@ class CalcLogic extends GetxController {
     '*',
   ];
   void modifyExp(String number) {
+    if (isOperator(number) && exp.isEmpty) {
+      number = '';
+      exp.trim();
+    }
     exp += number;
     update();
   }
