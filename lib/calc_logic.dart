@@ -14,6 +14,15 @@ class CalcLogic extends GetxController {
     update();
   }
 
+  bool isOperator(String number) {
+    for (String op in operators) {
+      if (number == op) {
+        return true;
+      }
+    }
+    return false;
+  }
+
   void clearExp() {
     exp = "";
     update();
