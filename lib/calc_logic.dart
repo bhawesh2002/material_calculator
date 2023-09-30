@@ -56,7 +56,7 @@ class CalcLogic extends GetxController {
 
 //function to clear the last character from exp
   void delChar() {
-    if (exp != "") {
+    if (exp.isNotEmpty) {
       exp = exp.substring(0, (exp.length - 1));
     }
     update();
