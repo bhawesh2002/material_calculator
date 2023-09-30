@@ -26,7 +26,10 @@ class Home extends StatelessWidget {
           right: 20,
           child: GetBuilder<CalcLogic>(
             builder: (context) {
-              return Text(calcLogic.exp);
+              return Text(
+                calcLogic.exp,
+                textScaleFactor: 2,
+              );
             },
           ),
         ),
@@ -35,7 +38,11 @@ class Home extends StatelessWidget {
           right: 20,
           child: GetBuilder<CalcLogic>(
             builder: (context) {
-              return Text(calcLogic.result);
+              return Text(
+                calcLogic.result,
+                textScaleFactor: 2.3,
+                style: TextStyle(fontWeight: FontWeight.bold),
+              );
             },
           ),
         ),
