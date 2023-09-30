@@ -41,7 +41,7 @@ class Home extends StatelessWidget {
               return Text(
                 calcLogic.result,
                 textScaleFactor: 2.3,
-                style: TextStyle(fontWeight: FontWeight.bold),
+                style: const TextStyle(fontWeight: FontWeight.bold),
               );
             },
           ),
