@@ -27,7 +27,7 @@ class CalcLogic extends GetxController {
     return false;
   }
 
-  bool multipleOpHandler(String prevOp, String currOP) {
+  bool multiOpChecker(String prevOp, String currOP) {
     for (String op in operators) {
       if (prevOp == op && isOperator(currOP)) {
         return true;
