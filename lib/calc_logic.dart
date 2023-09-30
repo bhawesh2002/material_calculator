@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
 class CalcLogic extends GetxController {
-  //String to hold mathematical expression to beevaluated
+  //String to hold mathematical expression to be evaluated
   String exp = "";
   //list of operators
   List<String> operators = [
