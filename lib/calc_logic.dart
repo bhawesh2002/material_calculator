@@ -66,6 +66,7 @@ class CalcLogic extends GetxController {
 //function to clear the exp
   void clearExp() {
     exp = "";
+    result = "";
     update();
   }
 
