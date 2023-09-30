@@ -55,8 +55,7 @@ class NumPad extends StatelessWidget {
               },
               color: Colors.red,
             );
-          }
-          if (buttonName[index] == 'DEL') {
+          } else if (buttonName[index] == 'DEL') {
             return Button(
               number: buttonName[index],
               buttonFunct: () {
