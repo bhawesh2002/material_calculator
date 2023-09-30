@@ -29,7 +29,16 @@ class Home extends StatelessWidget {
               return Text(calcLogic.exp);
             },
           ),
-        )
+        ),
+        Positioned(
+          top: 150,
+          right: 20,
+          child: GetBuilder<CalcLogic>(
+            builder: (context) {
+              return Text(calcLogic.result);
+            },
+          ),
+        ),
       ],
     ));
   }
