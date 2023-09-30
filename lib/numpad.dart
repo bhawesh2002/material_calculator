@@ -21,7 +21,7 @@ class NumPad extends StatelessWidget {
     '7',
     '8',
     '9',
-    '*',
+    'x',
     'DEL',
     '0',
     '.',
