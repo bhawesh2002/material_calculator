@@ -1,8 +1,10 @@
 import 'package:get/get.dart';
+import 'package:math_expressions/math_expressions.dart';
 
 class CalcLogic extends GetxController {
   //String to hold mathematical expression to be evaluated
   String exp = "";
+  String result = "";
   //list of operators
   List<String> operators = [
     '%',
@@ -24,6 +26,17 @@ class CalcLogic extends GetxController {
       }
     }
     exp += number;
+    update();
+  }
+
+  void calculateExp() {
+    String userInput = exp;
+    userInput = userInput.replaceAll("x", "*");
+    Parser p = Parser();
+    Expression expression = p.parse(userInput);
+    ContextModel ctx = ContextModel();
+    double output = expression.evaluate(EvaluationType.REAL, ctx);
+    result = output.toString();
     update();
   }
 
