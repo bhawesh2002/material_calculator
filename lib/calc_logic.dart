@@ -31,12 +31,14 @@ class CalcLogic extends GetxController {
 
   void calculateExp() {
     String userInput = exp;
-    userInput = userInput.replaceAll("x", "*");
-    Parser p = Parser();
-    Expression expression = p.parse(userInput);
-    ContextModel ctx = ContextModel();
-    double output = expression.evaluate(EvaluationType.REAL, ctx);
-    result = output.toString();
+    if (userInput.isNotEmpty) {
+      userInput = userInput.replaceAll("x", "*");
+      Parser p = Parser();
+      Expression expression = p.parse(userInput);
+      ContextModel ctx = ContextModel();
+      double output = expression.evaluate(EvaluationType.REAL, ctx);
+      result = output.toString();
+    }
     update();
   }
 
