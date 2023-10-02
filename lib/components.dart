@@ -15,18 +15,16 @@ class Button extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ClipOval(
-      child: Material(
-        child: InkWell(
-          onTap: buttonFunct,
-          child: Container(
-            color: buttonColor,
-            child: Center(
-              child: Text(
-                number,
-                textScaleFactor: 1.5,
-                style: TextStyle(color: textColor, fontWeight: FontWeight.w600),
-              ),
+    return Material(
+      child: InkWell(
+        onTap: buttonFunct,
+        child: Container(
+          color: buttonColor,
+          child: Center(
+            child: Text(
+              number,
+              textScaleFactor: 1.5,
+              style: TextStyle(color: textColor, fontWeight: FontWeight.w600),
             ),
           ),
         ),
