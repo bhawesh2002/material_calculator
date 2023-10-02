@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:material_calculator/theme.dart';
 
 // ignore: must_be_immutable
 class Button extends StatelessWidget {
