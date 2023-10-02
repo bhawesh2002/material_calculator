@@ -81,7 +81,7 @@ class NumPad extends StatelessWidget {
               buttonFunct: () {
                 calcLogic.modifyExp(buttonName[index]);
               },
-              textColor: Colors.black,
+              textColor: MaterialCalcColors().shade900,
               buttonColor: MaterialCalcColors().shade200,
             );
           }
