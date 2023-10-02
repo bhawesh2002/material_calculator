@@ -10,9 +10,12 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: NumPad(),
-      ),
-    );
+        body: Stack(
+      children: [
+        Container(
+          width: MediaQuery.of(context).size.width,
+        )
+      ],
+    ));
   }
 }
