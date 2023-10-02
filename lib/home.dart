@@ -29,7 +29,7 @@ class Home extends StatelessWidget {
             builder: (context) {
               return Text(
                 calcLogic.exp,
-                textScaleFactor: 3,
+                textScaleFactor: 2.5,
                 style: TextStyle(
                   color: MaterialCalcColors().shade800,
                 ),
@@ -44,7 +44,7 @@ class Home extends StatelessWidget {
             builder: (context) {
               return Text(
                 calcLogic.result,
-                textScaleFactor: 3.2,
+                textScaleFactor: 3,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: MaterialCalcColors().shade800,
