@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:material_calculator/calc_logic.dart';
 import 'package:material_calculator/components.dart';
+import 'package:material_calculator/theme.dart';
 
 class NumPad extends StatelessWidget {
   NumPad({super.key});
@@ -32,9 +33,9 @@ class NumPad extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height * 0.7,
+      height: MediaQuery.of(context).size.height,
       decoration: BoxDecoration(
-          color: Colors.green.shade100,
+          color: MaterialCalcColors().shade50,
           borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(40), topRight: Radius.circular(40))),
       child: GridView.builder(
