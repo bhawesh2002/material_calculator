@@ -26,20 +26,20 @@ class Home extends StatelessWidget {
           decoration: BoxDecoration(
             color: MaterialCalcColors().shade100,
             borderRadius: const BorderRadius.only(
-              bottomLeft: Radius.circular(25),
-              bottomRight: Radius.circular(25),
+              bottomLeft: Radius.circular(30),
+              bottomRight: Radius.circular(30),
             ),
           ),
-          height: MediaQuery.of(context).size.height * 0.32,
+          height: MediaQuery.of(context).size.height * 0.38,
         ),
         Positioned(
-          top: 80,
+          top: 100,
           right: 20,
           child: GetBuilder<CalcLogic>(
             builder: (context) {
               return Text(
                 calcLogic.exp,
-                textScaleFactor: 2.5,
+                textScaleFactor: 3,
                 style: TextStyle(
                   color: MaterialCalcColors().shade800,
                 ),
@@ -48,13 +48,13 @@ class Home extends StatelessWidget {
           ),
         ),
         Positioned(
-          top: 150,
+          top: 200,
           right: 20,
           child: GetBuilder<CalcLogic>(
             builder: (context) {
               return Text(
                 calcLogic.result,
-                textScaleFactor: 3,
+                textScaleFactor: 3.5,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: MaterialCalcColors().shade800,

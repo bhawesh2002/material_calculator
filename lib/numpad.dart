@@ -33,7 +33,7 @@ class NumPad extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height * 0.7,
+      height: MediaQuery.of(context).size.height * 0.62,
       decoration: const BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.only(
