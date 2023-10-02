@@ -35,7 +35,7 @@ class NumPad extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
       decoration: BoxDecoration(
-          color: MaterialCalcColors().shade50,
+          color: Colors.white,
           borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(40), topRight: Radius.circular(40))),
       child: GridView.builder(
