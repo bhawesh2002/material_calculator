@@ -6,11 +6,13 @@ class Button extends StatelessWidget {
   final String number;
   final VoidCallback buttonFunct;
   final Color textColor;
+  final Color buttonColor;
   const Button(
       {super.key,
       required this.number,
       required this.buttonFunct,
-      required this.textColor});
+      required this.textColor,
+      required this.buttonColor});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +21,7 @@ class Button extends StatelessWidget {
         child: InkWell(
           onTap: buttonFunct,
           child: Container(
-            color: MaterialCalcColors().shade300,
+            color: buttonColor,
             child: Center(
               child: Text(
                 number,
