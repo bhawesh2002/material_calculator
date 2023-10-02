@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:material_calculator/home.dart';
+import 'package:material_calculator/theme.dart';
 
 void main() => runApp(const Material_Calculator());
 
@@ -11,7 +12,7 @@ class Material_Calculator extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Material Calculator',
-      theme: ThemeData(useMaterial3: true, primarySwatch: Colors.green),
+      theme: ThemeData(useMaterial3: true, primarySwatch: MaterialCalcColors()),
       home: Home(),
     );
   }
