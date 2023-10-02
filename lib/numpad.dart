@@ -54,7 +54,7 @@ class NumPad extends StatelessWidget {
               buttonFunct: () {
                 calcLogic.clearExp();
               },
-              color: Colors.red,
+              textColor: MaterialCalcColors().shade800,
             );
           } else if (buttonName[index] == '=') {
             return Button(
@@ -62,7 +62,7 @@ class NumPad extends StatelessWidget {
               buttonFunct: () {
                 calcLogic.calculateExp();
               },
-              color: Colors.black,
+              textColor: Colors.black,
             );
           } else if (buttonName[index] == 'DEL') {
             return Button(
@@ -70,7 +70,7 @@ class NumPad extends StatelessWidget {
               buttonFunct: () {
                 calcLogic.delChar();
               },
-              color: Colors.red,
+              textColor: Colors.red,
             );
           } else {
             return Button(
@@ -78,7 +78,7 @@ class NumPad extends StatelessWidget {
               buttonFunct: () {
                 calcLogic.modifyExp(buttonName[index]);
               },
-              color: Colors.black,
+              textColor: Colors.black,
             );
           }
         },
