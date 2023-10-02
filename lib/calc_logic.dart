@@ -11,7 +11,7 @@ class CalcLogic extends GetxController {
     '/',
     '+',
     '-',
-    '*',
+    'x',
   ];
   //A function that adds user input to the exp and makes sure that
   //the format of mathematical expression exp is correct
