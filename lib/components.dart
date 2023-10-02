@@ -5,12 +5,12 @@ import 'package:material_calculator/theme.dart';
 class Button extends StatelessWidget {
   final String number;
   final VoidCallback buttonFunct;
-  final Color color;
+  final Color textColor;
   const Button(
       {super.key,
       required this.number,
       required this.buttonFunct,
-      required this.color});
+      required this.textColor});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class Button extends StatelessWidget {
               child: Text(
                 number,
                 textScaleFactor: 1.5,
-                style: TextStyle(color: color, fontWeight: FontWeight.w600),
+                style: TextStyle(color: textColor, fontWeight: FontWeight.w600),
               ),
             ),
           ),
