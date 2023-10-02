@@ -22,6 +22,16 @@ class Home extends StatelessWidget {
           left: 0,
           child: NumPad(),
         ),
+        Container(
+          decoration: BoxDecoration(
+            color: MaterialCalcColors().shade100,
+            borderRadius: const BorderRadius.only(
+              bottomLeft: Radius.circular(25),
+              bottomRight: Radius.circular(25),
+            ),
+          ),
+          height: MediaQuery.of(context).size.height * 0.32,
+        ),
         Positioned(
           top: 80,
           right: 20,
