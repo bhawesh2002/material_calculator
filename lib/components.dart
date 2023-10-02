@@ -16,7 +16,7 @@ class Button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      child: InkWell(
+      child: GestureDetector(
         onTap: buttonFunct,
         child: Container(
           decoration: BoxDecoration(
