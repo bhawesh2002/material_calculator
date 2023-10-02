@@ -38,11 +38,16 @@ class Home extends StatelessWidget {
           right: 20,
           child: GetBuilder<CalcLogic>(
             builder: (context) {
-              return Text(
-                calcLogic.exp,
-                textScaleFactor: 3,
-                style: TextStyle(
-                  color: MaterialCalcColors().shade800,
+              return SingleChildScrollView(
+                reverse: true,
+                scrollDirection: Axis.horizontal,
+                child: Text(
+                  calcLogic.exp,
+                  textScaleFactor: 3,
+                  maxLines: 1,
+                  style: TextStyle(
+                    color: MaterialCalcColors().shade800,
+                  ),
                 ),
               );
             },
