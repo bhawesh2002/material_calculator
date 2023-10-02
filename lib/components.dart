@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:material_calculator/theme.dart';
 
 // ignore: must_be_immutable
 class Button extends StatelessWidget {
@@ -18,7 +19,7 @@ class Button extends StatelessWidget {
         child: InkWell(
           onTap: buttonFunct,
           child: Container(
-            color: Colors.green.shade200,
+            color: MaterialCalcColors().shade300,
             child: Center(
               child: Text(
                 number,
