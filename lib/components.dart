@@ -19,7 +19,9 @@ class Button extends StatelessWidget {
       child: InkWell(
         onTap: buttonFunct,
         child: Container(
-          color: buttonColor,
+          decoration: BoxDecoration(
+            color: buttonColor,
+          ),
           child: Center(
             child: Text(
               number,
