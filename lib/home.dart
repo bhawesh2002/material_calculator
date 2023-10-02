@@ -22,13 +22,13 @@ class Home extends StatelessWidget {
           child: NumPad(),
         ),
         Positioned(
-          top: 100,
+          top: 80,
           right: 20,
           child: GetBuilder<CalcLogic>(
             builder: (context) {
               return Text(
                 calcLogic.exp,
-                textScaleFactor: 2,
+                textScaleFactor: 3,
               );
             },
           ),
@@ -40,7 +40,7 @@ class Home extends StatelessWidget {
             builder: (context) {
               return Text(
                 calcLogic.result,
-                textScaleFactor: 2.3,
+                textScaleFactor: 3.2,
                 style: const TextStyle(fontWeight: FontWeight.bold),
               );
             },
