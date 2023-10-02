@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:material_calculator/calc_logic.dart';
 import 'package:material_calculator/numpad.dart';
+import 'package:material_calculator/theme.dart';
 
 class Home extends StatelessWidget {
   Home({super.key});
@@ -29,6 +30,9 @@ class Home extends StatelessWidget {
               return Text(
                 calcLogic.exp,
                 textScaleFactor: 3,
+                style: TextStyle(
+                  color: MaterialCalcColors().shade800,
+                ),
               );
             },
           ),
@@ -41,7 +45,10 @@ class Home extends StatelessWidget {
               return Text(
                 calcLogic.result,
                 textScaleFactor: 3.2,
-                style: const TextStyle(fontWeight: FontWeight.bold),
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: MaterialCalcColors().shade800,
+                ),
               );
             },
           ),
