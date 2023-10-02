@@ -32,7 +32,7 @@ class Home extends StatelessWidget {
                 bottomRight: Radius.circular(30),
               ),
             ),
-            height: height * 0.38,
+            height: height * 0.34,
           ),
           Positioned(
             top: 100,
@@ -55,7 +55,7 @@ class Home extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: 200,
+            top: 180,
             right: 20,
             child: GetBuilder<CalcLogic>(
               builder: (context) {
