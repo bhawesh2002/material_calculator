@@ -7,15 +7,16 @@ import 'package:material_calculator/theme.dart';
 class Home extends StatelessWidget {
   Home({super.key});
   final calcLogic = Get.put(CalcLogic());
-
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
     return Scaffold(
         body: Stack(
       children: [
         SizedBox(
-          width: MediaQuery.of(context).size.width,
-          height: MediaQuery.of(context).size.height,
+          width: width,
+          height: height,
         ),
         Positioned(
           bottom: 0,
@@ -30,7 +31,7 @@ class Home extends StatelessWidget {
               bottomRight: Radius.circular(30),
             ),
           ),
-          height: MediaQuery.of(context).size.height * 0.38,
+          height: height * 0.38,
         ),
         Positioned(
           top: 100,
