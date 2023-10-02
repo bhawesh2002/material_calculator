@@ -6,7 +6,7 @@ class MaterialCalcColors extends MaterialColor {
   MaterialCalcColors()
       : super(_primaryColorValue, {
           50: const Color(0xFFFFF9E5),
-          100: const Color(0xFFFFF3C9),
+          100: const Color(0xFFFFF4CB),
           200: const Color(0xFFFFECA7),
           300: const Color(0xFFFFE176),
           400: const Color(0xFFFFD541),
