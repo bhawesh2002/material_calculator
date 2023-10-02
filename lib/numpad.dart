@@ -72,7 +72,7 @@ class NumPad extends StatelessWidget {
               buttonFunct: () {
                 calcLogic.delChar();
               },
-              textColor: Colors.red,
+              textColor: MaterialCalcColors().shade800,
               buttonColor: MaterialCalcColors().shade400,
             );
           } else {
