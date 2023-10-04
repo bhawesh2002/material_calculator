@@ -29,6 +29,7 @@ class CalcLogic extends GetxController {
     update();
   }
 
+//use functiond defined in math_expressions.dart to evaluate the exp entered by the user
   void calculateExp() {
     String userInput = exp;
     if (userInput.isNotEmpty) {
