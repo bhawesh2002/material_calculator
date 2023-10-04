@@ -15,13 +15,12 @@ class Button extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: buttonFunct,
-      child: Container(
-        decoration: BoxDecoration(
-          color: buttonColor,
-          borderRadius: BorderRadius.circular(25),
-        ),
+    return Material(
+      color: buttonColor,
+      borderRadius: BorderRadius.circular(25),
+      child: InkWell(
+        onTap: buttonFunct,
+        borderRadius: BorderRadius.circular(25),
         child: Center(
           child: Text(
             number,
