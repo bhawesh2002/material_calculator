@@ -43,6 +43,7 @@ class CalcLogic extends GetxController {
     update();
   }
 
+  void brakethandler() {}
 //function to check weather the number entered is an operator defined
 //in list of operators or not
   bool isOperator(String number) {
@@ -64,7 +65,6 @@ class CalcLogic extends GetxController {
     return false;
   }
 
-  void brakethandler() {}
 //function to clear the exp
   void clearExp() {
     exp = "";
