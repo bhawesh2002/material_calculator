@@ -25,13 +25,6 @@ class CalcLogic extends GetxController {
         exp = exp.substring(0, exp.length - 1);
       }
     }
-    if (number == '( )') {
-      if (exp.contains('(')) {
-        number = ')';
-      } else {
-        number = '(';
-      }
-    }
     exp += number;
     update();
   }
