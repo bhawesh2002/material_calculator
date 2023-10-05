@@ -29,21 +29,11 @@ class CalcLogic extends GetxController {
     update();
   }
 
-//use functiond defined in math_expressions.dart to evaluate the exp entered by the user
-  void calculateExp() {
-    String userInput = exp;
-    if (userInput.isNotEmpty) {
-      userInput = userInput.replaceAll("x", "*");
-      Parser p = Parser();
-      Expression expression = p.parse(userInput);
-      ContextModel ctx = ContextModel();
-      double output = expression.evaluate(EvaluationType.REAL, ctx);
-      result = output.toString();
-    }
-    update();
+  void brakethandler() {
+    final splittedexp = exp.split('');
+    print(splittedexp);
   }
 
-  void brakethandler() {}
 //function to check weather the number entered is an operator defined
 //in list of operators or not
   bool isOperator(String number) {
@@ -76,6 +66,20 @@ class CalcLogic extends GetxController {
   void delChar() {
     if (exp.isNotEmpty) {
       exp = exp.substring(0, (exp.length - 1));
+    }
+    update();
+  }
+
+  //use functiond defined in math_expressions.dart to evaluate the exp entered by the user
+  void calculateExp() {
+    String userInput = exp;
+    if (userInput.isNotEmpty) {
+      userInput = userInput.replaceAll("x", "*");
+      Parser p = Parser();
+      Expression expression = p.parse(userInput);
+      ContextModel ctx = ContextModel();
+      double output = expression.evaluate(EvaluationType.REAL, ctx);
+      result = output.toString();
     }
     update();
   }
