@@ -64,6 +64,7 @@ class CalcLogic extends GetxController {
     return false;
   }
 
+  void brakethandler() {}
 //function to clear the exp
   void clearExp() {
     exp = "";
