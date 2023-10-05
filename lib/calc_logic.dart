@@ -29,11 +29,6 @@ class CalcLogic extends GetxController {
     update();
   }
 
-  void brakethandler() {
-    final splittedexp = exp.split('');
-    print(splittedexp);
-  }
-
 //function to check weather the number entered is an operator defined
 //in list of operators or not
   bool isOperator(String number) {
