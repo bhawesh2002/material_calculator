@@ -16,6 +16,7 @@ class CalcLogic extends GetxController {
   //A function that adds user input to the exp and makes sure that
   //the format of mathematical expression exp is correct
   void modifyExp(String number) {
+    //check if the exp is empty and number is a operator
     if (isOperator(number) && exp.isEmpty) {
       number = '';
       exp.trim();
