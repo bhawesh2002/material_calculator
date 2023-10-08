@@ -79,4 +79,6 @@ class CalcLogic extends GetxController {
     }
     update();
   }
+
+  void equalPressed() {}
 }
