@@ -22,6 +22,7 @@ class CalcLogic extends GetxController {
       number = '';
       exp.trim();
     }
+    //Replace old operator with current operator
     if (isOperator(number) && exp.isNotEmpty) {
       if (multiOpChecker(exp[exp.length - 1], number)) {
         exp = exp.substring(0, exp.length - 1);
