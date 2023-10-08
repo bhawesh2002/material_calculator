@@ -28,6 +28,7 @@ class CalcLogic extends GetxController {
         exp = exp.substring(0, exp.length - 1);
       }
     }
+    //If any other button is pressed after pressing '=' then clear result
     if (isequalPressed == true) {
       result = '';
       result.trim();
