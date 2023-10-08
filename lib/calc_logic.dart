@@ -5,6 +5,7 @@ class CalcLogic extends GetxController {
   //String to hold mathematical expression to be evaluated
   String exp = "";
   String result = "";
+  bool isequalPressed = false;
   //list of operators
   List<String> operators = [
     '%',
@@ -25,6 +26,10 @@ class CalcLogic extends GetxController {
       if (multiOpChecker(exp[exp.length - 1], number)) {
         exp = exp.substring(0, exp.length - 1);
       }
+    }
+    if (isequalPressed == true) {
+      number = '';
+      number.trim();
     }
     exp += number;
     update();
@@ -82,5 +87,6 @@ class CalcLogic extends GetxController {
 
   void equalPressed() {
     calculateExp();
+    isequalPressed = true;
   }
 }
