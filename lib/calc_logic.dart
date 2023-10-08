@@ -28,8 +28,8 @@ class CalcLogic extends GetxController {
       }
     }
     if (isequalPressed == true) {
-      number = '';
-      number.trim();
+      exp = '';
+      exp.trim();
     }
     exp += number;
     update();
