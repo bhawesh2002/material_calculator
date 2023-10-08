@@ -88,6 +88,7 @@ class CalcLogic extends GetxController {
     update();
   }
 
+//call calculateExp and set isEqualPressed to true
   void equalPressed() {
     calculateExp();
     isequalPressed = true;
