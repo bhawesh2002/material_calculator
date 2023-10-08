@@ -71,6 +71,8 @@ class CalcLogic extends GetxController {
     if (exp.isNotEmpty) {
       exp = exp.substring(0, (exp.length - 1));
     }
+    result = '';
+    result.trim();
     update();
   }
 
