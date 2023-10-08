@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 import 'package:math_expressions/math_expressions.dart';
 
@@ -28,8 +29,8 @@ class CalcLogic extends GetxController {
       }
     }
     if (isequalPressed == true) {
-      exp = '';
-      exp.trim();
+      result = '';
+      result.trim();
       isequalPressed = false;
     }
     exp += number;
