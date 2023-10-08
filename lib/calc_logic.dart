@@ -30,6 +30,7 @@ class CalcLogic extends GetxController {
     if (isequalPressed == true) {
       exp = '';
       exp.trim();
+      isequalPressed = false;
     }
     exp += number;
     update();
