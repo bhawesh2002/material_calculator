@@ -61,7 +61,7 @@ class NumPad extends StatelessWidget {
             return Button(
               number: buttonName[index],
               buttonFunct: () {
-                calcLogic.calculateExp();
+                calcLogic.equalPressed();
               },
               textColor: Colors.black,
               buttonColor: MaterialCalcColors().shade500,
