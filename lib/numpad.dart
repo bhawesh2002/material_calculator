@@ -48,6 +48,7 @@ class NumPad extends StatelessWidget {
         physics: const NeverScrollableScrollPhysics(),
         itemCount: buttonName.length,
         itemBuilder: (context, index) {
+          //clear exp if 'C' is pressed
           if (buttonName[index] == 'C') {
             return Button(
               number: buttonName[index],
@@ -57,7 +58,9 @@ class NumPad extends StatelessWidget {
               textColor: MaterialCalcColors().shade800,
               buttonColor: Colors.white,
             );
-          } else if (buttonName[index] == '=') {
+          }
+          //evaluate the exp if '=' is pressed
+          else if (buttonName[index] == '=') {
             return Button(
               number: buttonName[index],
               buttonFunct: () {
@@ -66,7 +69,9 @@ class NumPad extends StatelessWidget {
               textColor: Colors.black,
               buttonColor: MaterialCalcColors().shade500,
             );
-          } else if (buttonName[index] == 'DEL') {
+          }
+          //delete last character exp if 'DEL' is pressed
+          else if (buttonName[index] == 'DEL') {
             return Button(
               number: buttonName[index],
               buttonFunct: () {
@@ -75,7 +80,9 @@ class NumPad extends StatelessWidget {
               textColor: MaterialCalcColors().shade800,
               buttonColor: MaterialCalcColors().shade400,
             );
-          } else {
+          }
+          //modify the exp if any other button is pressed
+          else {
             return Button(
               number: buttonName[index],
               buttonFunct: () {
