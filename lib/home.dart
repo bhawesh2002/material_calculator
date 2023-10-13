@@ -4,6 +4,7 @@ import 'package:material_calculator/calc_logic.dart';
 import 'package:material_calculator/numpad.dart';
 import 'package:material_calculator/theme.dart';
 
+//Widget responsible for creating the initial Ui for the material_calculator
 class Home extends StatelessWidget {
   Home({super.key});
   final calcLogic = Get.put(CalcLogic());
