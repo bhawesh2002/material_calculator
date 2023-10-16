@@ -80,7 +80,8 @@ class CalcLogic extends GetxController {
   void calculateExp() {
     String userInput = exp;
     if (userInput.isNotEmpty) {
-      userInput = userInput.replaceAll("x", "*");
+      userInput = userInput.replaceAll("x",
+          "*"); //replace the 'x' (multiply op) to the '*' dereferencing operator
       Parser p = Parser();
       Expression expression = p.parse(userInput);
       ContextModel ctx = ContextModel();
