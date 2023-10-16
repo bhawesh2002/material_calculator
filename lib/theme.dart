@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+//class defining the colors used in Material_calculatoor
+
 class MaterialCalcColors extends MaterialColor {
   static const int _primaryColorValue = 0xFFFFC700;
 
