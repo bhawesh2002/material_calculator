@@ -14,6 +14,7 @@ class Home extends StatelessWidget {
     double height = MediaQuery.of(context).size.height;
     return SafeArea(
       child: Scaffold(
+          //Use Stack widget to position the elements of the UI
           body: Stack(
         children: [
           SizedBox(
