@@ -14,66 +14,67 @@ class Home extends StatelessWidget {
     double height = MediaQuery.of(context).size.height;
     return SafeArea(
       child: Scaffold(
-          //Use Stack widget to position the elements of the UI
-          body: Stack(
-        children: [
-          SizedBox(
-            width: width,
-            height: height,
-          ),
-          Positioned(
-            bottom: 0,
-            left: 0,
-            child: NumPad(),
-          ),
-          Container(
-            decoration: BoxDecoration(
-              color: MaterialCalcColors().shade100,
-              borderRadius: const BorderRadius.only(
-                bottomLeft: Radius.circular(30),
-                bottomRight: Radius.circular(30),
+        //Use Stack widget to position the elements of the UI
+        body: Stack(
+          children: [
+            SizedBox(
+              width: width,
+              height: height,
+            ),
+            Positioned(
+              bottom: 0,
+              left: 0,
+              child: NumPad(),
+            ),
+            Container(
+              decoration: BoxDecoration(
+                color: MaterialCalcColors().shade100,
+                borderRadius: const BorderRadius.only(
+                  bottomLeft: Radius.circular(30),
+                  bottomRight: Radius.circular(30),
+                ),
+              ),
+              height: height * 0.34,
+            ),
+            Positioned(
+              top: 100,
+              right: 20,
+              child: GetBuilder<CalcLogic>(
+                builder: (context) {
+                  return SingleChildScrollView(
+                    reverse: true,
+                    scrollDirection: Axis.horizontal,
+                    child: Text(
+                      calcLogic.exp,
+                      textScaleFactor: 3,
+                      maxLines: 1,
+                      style: TextStyle(
+                        color: MaterialCalcColors().shade800,
+                      ),
+                    ),
+                  );
+                },
               ),
             ),
-            height: height * 0.34,
-          ),
-          Positioned(
-            top: 100,
-            right: 20,
-            child: GetBuilder<CalcLogic>(
-              builder: (context) {
-                return SingleChildScrollView(
-                  reverse: true,
-                  scrollDirection: Axis.horizontal,
-                  child: Text(
-                    calcLogic.exp,
-                    textScaleFactor: 3,
-                    maxLines: 1,
+            Positioned(
+              top: 180,
+              right: 20,
+              child: GetBuilder<CalcLogic>(
+                builder: (context) {
+                  return Text(
+                    calcLogic.result,
+                    textScaleFactor: 3.5,
                     style: TextStyle(
+                      fontWeight: FontWeight.bold,
                       color: MaterialCalcColors().shade800,
                     ),
-                  ),
-                );
-              },
+                  );
+                },
+              ),
             ),
-          ),
-          Positioned(
-            top: 180,
-            right: 20,
-            child: GetBuilder<CalcLogic>(
-              builder: (context) {
-                return Text(
-                  calcLogic.result,
-                  textScaleFactor: 3.5,
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    color: MaterialCalcColors().shade800,
-                  ),
-                );
-              },
-            ),
-          ),
-        ],
-      )),
+          ],
+        ),
+      ),
     );
   }
 }
